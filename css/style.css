@@ -1,0 +1,144 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+
+
+.offpage {
+  position: absolute;
+  left: -1000px;
+
+}
+
+.offpage:focus {
+  position: static;
+  left: 0;
+  background-color: aquamarine;
+  text-decoration: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  background-color: mediumaquamarine;
+  border-radius: 5px;
+  font-size: x-large;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 60px;
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+
+  color: black;
+
+}
+
+nav {
+  background-image: url("../imgs/Nav.jpg");
+  height: 450px;
+  background-size: cover;
+  background-position: top;
+
+  width: 100%;
+}
+
+ul {
+  font-size: x-large;
+}
+
+
+
+h1 {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  border: outset brown;
+  background-color: lightblue;
+}
+
+p {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: large;
+
+}
+
+div {
+  margin-top: 33px;
+}
+
+.kos img {
+  width: 450px;
+  height: 450px;
+  border: solid black 4px;
+  opacity: 50%;
+}
+
+.kos {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-around;
+  transition-property: border, border-radius, opacity;
+  transition-delay: 0.5;
+  transition-timing-function: ease-in-out;
+}
+
+.kir {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  justify-content: space-around;
+  transition-property: border, border-radius, opacity;
+  transition-delay: 0.5;
+  transition-timing-function: ease-in-out;
+}
+
+.kir img {
+  width: 400px;
+  height: 400px;
+  border: dashed black 4px;
+  border-radius: 10%;
+  opacity: 50%;
+}
+
+.kir :nth-child(2n) {
+  border-radius: 20px;
+  border: solid 4px black;
+  padding: 4px;
+}
+
+.kos img:hover {
+  opacity: 100%;
+  border-radius: 15px;
+  border: dotted 5px;
+}
+
+.kos img:active {
+  opacity: 100%;
+  border-radius: 5px;
+  border: dotted 5px;
+}
+
+.kir img:hover {
+  opacity: 100%;
+  border-radius: 15px;
+  border: double 5px;
+}
+
+.kir img:active {
+  opacity: 100%;
+  border-radius: 5px;
+  border: double 5px;
+}
+
+.kun img {
+  border: solid 5px black;
+  border-radius: 4px;
+  opacity: 50%;
+  transition-property: opacity;
+}
+
+.kun img:hover {
+  opacity: 100%;
+}
